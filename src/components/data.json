@@ -1,0 +1,34 @@
+{
+    "latitude": 42.149233,
+    "CLASS": "Adzuna::API::Response::Job",
+    "company": {
+        "display_name": "Amazon Delivery Service Partners",
+        "CLASS": "Adzuna::API::Response::Company"
+    },
+    "created": "2023-09-17T08:33:05Z",
+    "description": "Job Title: Amazon DSP Delivery Driver - at least $21.50/ hour, Norwood, MA, DCB4 Location: DCB4 - 750 Everett St, Norwood, MA 02062, USA Compensation: At least $21.50/hour, plus overtime and benefits Amazon DSPs (Delivery Service Partners) are looking for delivery driver associates to help deliver packages to customers. DSPs are independent, small businesses that partner with Amazon to deliver packages out of Amazon Warehouse 750 Everett St, Norwood, MA 02062, USA. Why You'll Love Working for a…",
+    "longitude": -71.524234,
+    "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiRHYyZnd4TmI3aEdUZkFxREItNEp4USIsImkiOiI0MzE4NjA2Nzk4In0.y3sQqFsvHNxc2TgCc4_-NqHPuWIyRNUr21xCG2TDlIc",
+    "contract_time": "full_time",
+    "salary_is_predicted": "0",
+    "location": {
+        "area": [
+            "US",
+            "Massachusetts",
+            "Worcester County",
+            "Milford"
+        ],
+        "display_name": "Milford, Worcester County",
+        "CLASS": "Adzuna::API::Response::Location"
+    },
+    "salary_max": 41280,
+    "salary_min": 41280,
+    "id": "4318606798",
+    "title": "Delivery Service Representative - At least $21.50/hour",
+    "category": {
+        "CLASS": "Adzuna::API::Response::Category",
+        "label": "Logistics & Warehouse Jobs",
+        "tag": "logistics-warehouse-jobs"
+    },
+    "redirect_url": "https://www.adzuna.com/land/ad/4318606798?se=Dv2fwxNb7hGTfAqDB-4JxQ&utm_medium=api&utm_source=dba38e95&v=FA00C198A51C9A0DB340E038B3A23E1C82995C52"
+}
