@@ -41,7 +41,7 @@ function JobListings() {
         <div className="job-listing" key={job.id}>
           <p>Company: {job.company.display_name}</p>
           <p>Title: {job.title}</p>
-          <p>Salary: {job.salary_min} - {job.salary_max}</p>
+          <p>Salary: ${job.salary_min.toLocaleString()} {job.salary_min !== job.salary_max && `- $${job.salary_max.toLocaleString()}`}</p>
           <p>Days since posted: {job.daysSincePosted}</p>
           <select defaultValue={job.status}>
             <option value="applied">Applied</option>
