@@ -13,7 +13,14 @@ function JobListings() {
     fetch('http://localhost:5001/api/jobs')
       .then(response => response.json())
       .then(data => {
-        setJobs(data);
+        // Calculate the number of days since each job was posted and add a new status property
+        const currentDate = new Date();
+        const updatedJobs = data.map(job => {
+          const createdDate = new Date(job.created);
+          const daysSincePosted = Math.floor((currentDate - createdDate) / (1000 * 60 * 60 * 24));
+          return { ...job, daysSincePosted };
+        });
+        setJobs(updatedJobs);
         setLoading(false);
       })
       .catch(error => {
@@ -36,11 +43,12 @@ function JobListings() {
           <p>Title: {job.title}</p>
           <p>Salary: {job.salary_min} - {job.salary_max}</p>
           <p>Days since posted: {job.daysSincePosted}</p>
-          <select>
+          <select defaultValue={job.status}>
             <option value="applied">Applied</option>
             <option value="interview">Interview</option>
             <option value="offer">Offer</option>
             <option value="rejected">Rejected</option>
+            <option value="none"></option>
           </select>
           <a href={job.redirect_url}>View Job</a>
         </div>
