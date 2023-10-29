@@ -33,7 +33,15 @@ function JobListings() {
       {jobs.map(job => (
         <div className="job-listing" key={job.id}>
           <p>Company: {job.company.display_name}</p>
+          <p>Title: {job.title}</p>
           <p>Salary: {job.salary_min} - {job.salary_max}</p>
+          <p>Days since posted: {job.daysSincePosted}</p>
+          <select>
+            <option value="applied">Applied</option>
+            <option value="interview">Interview</option>
+            <option value="offer">Offer</option>
+            <option value="rejected">Rejected</option>
+          </select>
           <a href={job.redirect_url}>View Job</a>
         </div>
       ))}
