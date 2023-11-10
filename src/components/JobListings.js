@@ -29,12 +29,12 @@ function JobListings() {
       });
   }, []);
 
-  // If the job listings are still loading, render a loading message
+  // job listings are still loading
   if (loading) {
     return <div>Loading...</div>;
   }
 
-  // Otherwise, render a list of job listings
+  // render a list of job listings
   return (
     <div className="job-listings">
       {jobs.map(job => (
